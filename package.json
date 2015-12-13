@@ -1,0 +1,14 @@
+{
+  "name": "bemhint-plugins-jscs",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Eugene Gavryushin <job.egavr@yandex.ru>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eGavr/bemhint-plugins-jscs.git"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "jscs": "^2.7.0"
+  }
+}

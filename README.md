@@ -1,0 +1,1 @@
+# bemhint-plugins-jscs
