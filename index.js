@@ -1,6 +1,8 @@
 var Checker = require('jscs'),
     checker = new Checker();
 
+checker.registerDefaultRules();
+
 ///
 exports.forEntityTech = function(tech, techConfig, entity) {
     checker.configure(techConfig);
