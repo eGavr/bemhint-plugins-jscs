@@ -4,8 +4,12 @@ var Checker = require('jscs'),
 checker.registerDefaultRules();
 
 ///
-exports.forEntityTech = function(tech, techConfig, entity) {
-    checker.configure(techConfig);
+exports.forEachTech = function(tech, entity, config) {
+    if(!tech.content) {
+        return;
+    }
+
+    checker.configure(config.getTechConfig(tech.name));
 
     var results = checker.checkString(tech.content);
 
@@ -13,7 +17,7 @@ exports.forEntityTech = function(tech, techConfig, entity) {
         entity.addError({
             msg: error.message,
             tech: tech.name,
-            value: results.explainError(error, true).replace(/^.*?\n/, '')
+            value: 'line ' + error.line + ', character ' + error.column
         });
     });
 };

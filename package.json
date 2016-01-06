@@ -1,7 +1,7 @@
 {
   "name": "bemhint-plugins-jscs",
   "version": "0.1.0",
-  "description": "",
+  "description": "JSCS plugin for BEM hint",
   "author": "Eugene Gavryushin <job.egavr@yandex.ru>",
   "repository": {
     "type": "git",
